@@ -6,8 +6,8 @@ This public repository is a checkpoint-scoped, disposable proof harness for the 
 
 - Application: `Pacchifans69/LinguaGraph`
 - Branch: `m3-word-token-segmentation-foundation`
-- Candidate SHA: `1aeef812a1df276784fecb999d7d5e4b36dbfabd`
-- Candidate tree: `9e0d7be375cbf878e52ce1be3c0216d7cf7d07b7`
+- Candidate SHA: `0ddee8c9fec4a244af78987584eba16a88323acf`
+- Candidate tree: `fe523d9306b588575eb46f44e862b5cae579f9f5`
 - Frozen M3 contract/base: `fa861409947705f658209e53b8c507b535c5233a`
 - Expected Alembic head: `0004`
 
@@ -26,6 +26,10 @@ Earlier M0.7, M1, and M2 exceptions and proof results do not prove this M3 candi
 - Pipeline #1 used proof commit `6d6522356bb7d9e18574dcb5e99be2891d6f60fe` against candidate `11385271c2e15f2331338bfd382627013fe38564` / tree `5fecde0c23d5f4c577096fca62fdc1fdae3d56e4`.
 - It reached the full real-PostgreSQL backend suite and reported `412 passed, 3 failed`; all three failures were stale `0003` / pre-M3 foreign-key expectations.
 - Its failure logs and artifacts remain retained. They are diagnostic evidence and do not prove the repinned candidate.
+
+- Pipeline #2 used proof commit `fda8103f3d2c48f4baa49488818df74eec42a2a7` against candidate `1aeef812a1df276784fecb999d7d5e4b36dbfabd` / tree `9e0d7be375cbf878e52ce1be3c0216d7cf7d07b7`.
+- It passed all gates through the frontend production build; Playwright then reported three passed specifications and one failed M2 sentence-segmentation specification because `getByText('Saved')` ambiguously matched `Unsaved preview` and `Not saved` under strict mode.
+- Its failure logs, traces, and artifacts remain retained as diagnostic evidence and do not prove the newly repinned candidate.
 
 ## Execution
 
