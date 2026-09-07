@@ -6,8 +6,8 @@ This public repository is a checkpoint-scoped, disposable proof harness for the 
 
 - Application: `Pacchifans69/LinguaGraph`
 - Branch: `m3-word-token-segmentation-foundation`
-- Candidate SHA: `bc1a4cf3f4b0e7949f3185848533a912caf2026e`
-- Candidate tree: `c2f1a0d47fe61397f9a7d024946ae3e428764b13`
+- Candidate SHA: `d4254c1239e649b17dc4ae6d6f995e52bd4635db`
+- Candidate tree: `bf59e847b8874c90b76032e92fb006343b4662d6`
 - Frozen M3 contract/base: `fa861409947705f658209e53b8c507b535c5233a`
 - Expected Alembic head: `0004`
 
@@ -34,6 +34,10 @@ Earlier M0.7, M1, and M2 exceptions and proof results do not prove this M3 candi
 - Pipeline #3 used proof commit \`a54311bc73579810d212ffc21a8194b1f84e87b7\` against candidate \`0ddee8c9fec4a244af78987584eba16a88323acf\` / tree \`fe523d9306b588575eb46f44e862b5cae579f9f5\`.
 - It passed every exact-candidate semantic gate: provenance, Python 3.13, Node 24, PostgreSQL 18, frozen dependency installs, Alembic \`0004\`, 415 real-PostgreSQL backend tests with zero skips, frontend lint/typecheck/Vitest/build, all four Playwright specifications, cleanup, and final integrity.
 - Its logs and artifacts remain retained as successful proof of that historical candidate. They do not prove the newly repinned candidate.
+
+- Pipeline #4 used proof commit \`8516edffb0b6b6061654d7ab6c693fb45f4d730f\` against candidate \`bc1a4cf3f4b0e7949f3185848533a912caf2026e\` / tree \`c2f1a0d47fe61397f9a7d024946ae3e428764b13\`.
+- It reached the full real-PostgreSQL backend suite and reported \`418 passed, 1 failed\`. The new combining-mark test used an NFC-composable \`e + U+0301\` fixture while asserting pre-normalization offsets, so its sentence setup failed before token behavior was exercised.
+- Its logs and artifacts remain retained as diagnostic evidence and do not prove the newly repinned candidate.
 
 ## Execution
 
