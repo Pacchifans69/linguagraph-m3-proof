@@ -6,8 +6,8 @@ This public repository is a checkpoint-scoped, disposable proof harness for the 
 
 - Application: `Pacchifans69/LinguaGraph`
 - Branch: `m3-word-token-segmentation-foundation`
-- Candidate SHA: `11385271c2e15f2331338bfd382627013fe38564`
-- Candidate tree: `5fecde0c23d5f4c577096fca62fdc1fdae3d56e4`
+- Candidate SHA: `1aeef812a1df276784fecb999d7d5e4b36dbfabd`
+- Candidate tree: `9e0d7be375cbf878e52ce1be3c0216d7cf7d07b7`
 - Frozen M3 contract/base: `fa861409947705f658209e53b8c507b535c5233a`
 - Expected Alembic head: `0004`
 
@@ -20,6 +20,12 @@ A Human approved an M3-specific External Infrastructure Exception after the cano
 It does not waive exact provenance, clean hosted Linux execution, Python 3.13, Node 24, PostgreSQL 18, frozen dependencies, Alembic empty-to-`0004` verification, full real-PostgreSQL backend tests with zero skips, frontend lint/typecheck/Vitest/build, Playwright golden path, Unicode blocker, M2 sentence segmentation, M3 token segmentation, cleanup, final tracked-tree integrity, or retained evidence.
 
 Earlier M0.7, M1, and M2 exceptions and proof results do not prove this M3 candidate. This harness does not close `G2-X01`.
+
+## Retained proof history
+
+- Pipeline #1 used proof commit `6d6522356bb7d9e18574dcb5e99be2891d6f60fe` against candidate `11385271c2e15f2331338bfd382627013fe38564` / tree `5fecde0c23d5f4c577096fca62fdc1fdae3d56e4`.
+- It reached the full real-PostgreSQL backend suite and reported `412 passed, 3 failed`; all three failures were stale `0003` / pre-M3 foreign-key expectations.
+- Its failure logs and artifacts remain retained. They are diagnostic evidence and do not prove the repinned candidate.
 
 ## Execution
 
